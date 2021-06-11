@@ -1,0 +1,555 @@
+/********** GENERAL MENU FLEX **********/
+#menu .menu-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 65px 0 40px 0;
+}
+
+#menu .menu-container h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#menu .flex-row {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+#menu .flex-items {
+    flex: 25%;
+    margin: 0 15px 0 0;
+}
+
+#menu .flex-items a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#menu .flex-items p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    padding-top: 40%;
+    transition: 0.4s;
+}
+
+#menu .flex-items:hover p {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#menu .menu-container .color-span {
+    color: #856148;
+    font-size: 43px;
+}
+
+@media only screen and (max-width: 620px) {
+    #menu .menu-container {
+        width: 80%;
+    }
+
+    #menu .flex-row {
+        display: block;
+        margin: 0;
+    }
+
+    #menu .flex-items {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+
+    #menu .flex-items p {
+        opacity: 1;
+        padding-top: 35%;
+        font-size: 25px;
+    }
+}
+/********** **********/
+
+/********** IMAGE SLIDER **********/
+#menu .slider-container {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -6.5px;
+}
+
+#menu .slider {
+    height: 80vh;
+    width: 500vw;
+    margin: 0;
+    padding: 0;
+}
+
+#menu .slider-content  {
+    height: 80vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    float: left;
+}
+
+#menu .slider .slider-text h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #dbc1ac;
+    letter-spacing: 1px;
+}
+
+#menu .slider .slider-text p {
+    margin: 20px 0 0 0;
+    font-size: 22px;
+}
+
+#menu .slider .slider-text span {
+    text-decoration: underline;
+}
+
+#menu .slider .first-slide {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(../images/coffee/slider/coffee-first-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu .slider .first-slide .slider-text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 11% 0;
+}
+
+#menu .slider .second-slide {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/coffee/slider/coffee-second-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu .slider .second-slide .slider-text {
+    width: 40%;
+    margin: 0;
+    padding: 9% 0;
+    padding-left: 5%;
+}
+
+#menu .slider .third-slide {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/coffee/slider/coffee-third-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu .slider .third-slide .slider-text {
+    width: 40%;
+    margin: 0;
+    padding: 6% 0;
+    padding-left: 52%;
+}
+
+#menu .slider .fourth-slide {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/coffee/slider/coffee-fourth-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu .slider .fourth-slide .slider-text {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 13% 0;
+}
+
+#menu .slider-container .prev, .next {
+    position: absolute;
+    top: 52%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0.3;
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+#menu .slider-container .prev:hover, .next:hover {
+    opacity: 1;
+    transition: 0.4s;
+    background-color: #000000;
+}
+
+#menu .slider-container .prev {
+    left: 0;
+    padding: 5px 10px 5px 8px;
+}
+
+#menu .slider-container .next {
+    right: 0;
+    padding: 5px 8px 5px 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    #menu .slider-content  {
+        height: 90vh;
+        overflow: contain;
+    }
+
+    #menu .slider .slider-text {
+        width: 80%;
+    }
+
+    #menu .slider .slider-text h1 {
+        font-size: 35px;
+    }
+    
+    #menu .slider .slider-text p {
+        font-size: 18px;
+    }
+
+    #menu .slider .first-slide .slider-text {
+        width: 80%;
+        padding: 25% 0;
+    }
+
+    #menu .slider .second-slide .slider-text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 35% 0;
+        text-align: center;
+    }
+
+    #menu .slider .third-slide .slider-text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 25% 0;
+        text-align: center;
+    }
+
+    #menu .slider .fourth-slide .slider-text {
+        width: 80%;
+        padding: 40% 0;
+    }
+
+    #menu .slider-container .prev, .next {
+        top: 50%;
+    }
+}
+
+/********** **********/
+
+/********** IMAGES FOR COFFEE MENU **********/
+#menu .coffee-flex-1 {
+    background-image: url(../images/coffee/caffe-latte-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-1:hover {
+    background-image: url(../images/coffee/caffe-latte-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-2 {
+    background-image: url(../images/coffee/cappuccino-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-2:hover {
+    background-image: url(../images/coffee/cappuccino-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-3 {
+    background-image: url(../images/coffee/caffe-americano-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-3:hover {
+    background-image: url(../images/coffee/caffe-americano-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-4 {
+    background-image: url(../images/coffee/espresso-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-4:hover {
+    background-image: url(../images/coffee/espresso-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-5 {
+    background-image: url(../images/coffee/caffe-mocha-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-5:hover {
+    background-image: url(../images/coffee/caffe-mocha-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-6 {
+    background-image: url(../images/coffee/espresso-macchiato-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-6:hover {
+    background-image: url(../images/coffee/espresso-macchiato-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-7 {
+    background-image: url(../images/coffee/cold-brew-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-7:hover {
+    background-image: url(../images/coffee/cold-brew-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-8 {
+    background-image: url(../images/coffee/coffee-frappuccino-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-8:hover {
+    background-image: url(../images/coffee/coffee-frappuccino-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-9 {
+    background-image: url(../images/coffee/espresso-frappuccino-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-9:hover {
+    background-image: url(../images/coffee/espresso-frappuccino-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-10 {
+    background-image: url(../images/coffee/caramel-frappuccino-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-10:hover {
+    background-image: url(../images/coffee/caramel-frappuccino-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-11 {
+    background-image: url(../images/coffee/dark-mocha-frappuccino-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-11:hover {
+    background-image: url(../images/coffee/dark-mocha-frappuccino-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-12 {
+    background-image: url(../images/coffee/java-chip-frappuccino-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .coffee-flex-12:hover {
+    background-image: url(../images/coffee/java-chip-frappuccino-square-overlay.jpg);
+    transition: 0.4s;
+}
+/********** **********/
+
+/********** IMAGES FOR DESSERTS & COOKIES MENU **********/
+#menu .desscook-flex-1 {
+    background-image: url(../images/desserts-cookies/chocolate-chip-cookies-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-1:hover {
+    background-image: url(../images/desserts-cookies/chocolate-chip-cookies-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-2 {
+    background-image: url(../images/desserts-cookies/oatmeal-raisin-cookies-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-2:hover {
+    background-image: url(../images/desserts-cookies/oatmeal-raisin-cookies-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-3 {
+    background-image: url(../images/desserts-cookies/7-seeds-cookies-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-3:hover {
+    background-image: url(../images/desserts-cookies/7-seeds-cookies-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-4 {
+    background-image: url(../images/desserts-cookies/glazed-pillow-doughnut-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-4:hover {
+    background-image: url(../images/desserts-cookies/glazed-pillow-doughnut-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-5 {
+    background-image: url(../images/desserts-cookies/nutella-bombolone-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-5:hover {
+    background-image: url(../images/desserts-cookies/nutella-bombolone-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-6 {
+    background-image: url(../images/desserts-cookies/red-velvet-roll-cake-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-6:hover {
+    background-image: url(../images/desserts-cookies/red-velvet-roll-cake-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-7 {
+    background-image: url(../images/desserts-cookies/chocolate-fudge-brownies-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-7:hover {
+    background-image: url(../images/desserts-cookies/chocolate-fudge-brownies-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-8 {
+    background-image: url(../images/desserts-cookies/new-york-cheesecake-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-8:hover {
+    background-image: url(../images/desserts-cookies/new-york-cheesecake-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-9 {
+    background-image: url(../images/desserts-cookies/oreo-cheesecake-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-9:hover {
+    background-image: url(../images/desserts-cookies/oreo-cheesecake-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-10 {
+    background-image: url(../images/desserts-cookies/dark-chocolate-cake-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-10:hover {
+    background-image: url(../images/desserts-cookies/dark-chocolate-cake-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-11 {
+    background-image: url(../images/desserts-cookies/mocha-macarons-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-11:hover {
+    background-image: url(../images/desserts-cookies/mocha-macarons-square-overlay.jpg);
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-12 {
+    background-image: url(../images/desserts-cookies/tiramisu-macarons-square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+#menu .desscook-flex-12:hover {
+    background-image: url(../images/desserts-cookies/tiramisu-macarons-square-overlay.jpg);
+    transition: 0.4s;
+}
+/********** **********/

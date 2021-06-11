@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    padding: 2%;
+}
+
+.header .header-content .navbar ul li:hover ul{
+    position: absolute;
+    z-index: 1;
+}
+.header .header-content .navbar ul li ul li {
+    padding-bottom: 25px;
+}
+
+.content{
+    margin-top:-7px;
+}
+.banner-container{
+    width: 100%;
+}
+
+[class*="typical"]{
+    display: block;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image{
+    width: 100%;
+    display: block;
+    border: 10px solid red;
+    visibility: hidden;
+}
+
+.content [class*="banner"] .col-5{
+    position: absolute;
+    top:15%;
+    right: 0;
+    height: 70%;
+    color: black;
+}
+
+.content [class*="banner"] .col-6{
+    position: absolute;
+    top: 7%;
+    right: 25%;
+    height: 70%;
+    text-align: center;
+
+}
+
+.content [class*="banner"] [class*="flipped"]{
+    position: absolute;
+    top: 7%;
+    left: 0;
+    height: 70%;
+}
+
+.banner-container [class*="banner"] .col-5 .title{
+    font-size: 3vw;
+    height: 20%;
+}
+
+.banner-container [class*="banner"] .col-5 .description{
+    margin-top: 20px;
+    font-size: 1.3vw;
+    height: 80%;
+    line-height: 5vh;
+}
+
+.banner-container [class*="banner"] .col-6 .title #text{
+    font-family: 'Happy Monkey', cursive;
+    text-shadow: 10px 10px 5px rgb(78, 78, 78);
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #00c3ff;
+    margin: 0;
+}
+
+.content [class*="banner"] .col-6 #description{
+    font-family: 'Happy Monkey', cursive;
+    font-size: 1.5vw;
+    margin-top: 3%;
+    font-weight: bold;
+    text-shadow: 8px 8px 4px yellow;
+    color: black;
+}
+.content [class*="banner"] .col-6 #description:active{
+    color:black;
+}
+
+.banner-container [class*="banner"] [class*="flipped"] .title .text{
+    text-align: right;
+    margin: 0;
+}
+
+.banner-container [class*="banner"] [class*="flipped"]  .description{
+    text-align: right;
+    line-height: 5vh;
+}
+
+.banner-container .banner1{
+    background-image: url("../images/home/home-cappucino-3by1.png");
+}
+
+.banner-container .banner2{
+    background-image: url("../images/home/cheesecake-3by1.png")
+}
+
+.banner-container .banner3{
+
+    background-image: url("../images/home/javachip-frappucino-funsummer-3by1.png")
+}
+
+@media only screen and (max-width: 768px) {
+/* For Mobile phone */
+[class*="typical"]{
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-container [class*="banner"]{
+    background-size: cover;
+}
+
+.banner-container [class*="banner"] img{
+    display: block;
+    visibility: hidden;
+    width: 100%;
+}
+
+.banner-container [class*="banner"] .col-5{
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    text-align: center;
+}
+
+.banner-container .banner1{
+    background-image: url("../images/home/home-cappucino-1by34th.png");
+}
+
+.banner-container .banner1 img{
+    content: url("../images/home/home-cappucino-1by34th.png");  
+}
+
+.banner-container .banner1 .col-5{
+    color: white;
+}
+
+.banner-container .banner1 .col-5 .title{
+    font-size: 10vw;
+}
+
+.banner-container .banner1 .col-5 .description{
+    font-size: 3vw;
+}
+
+.banner-container .banner2{
+    background-image: url("../images/home/cheesecake.jpg");
+}
+
+.banner-container .banner2 img{
+    content: url("../images/home/cheesecake.jpg");
+}
+
+.banner-container .banner2 .col-5{
+    color :rgb(0, 0, 0);
+    text-align: center;
+}
+
+.banner-container .banner2 .col-5 .title .text{
+    font-size: 10vw;
+    text-align: center;
+}
+
+.banner-container .banner2 .col-5 .description{
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px black;
+}
+
+.banner-container .banner3{
+    background-image: url("../images/home/javachip-frappucino-funsummer-mobile.png");
+}
+
+.banner-container .banner3 .col-6{
+    width: 66.66%;
+    left: 16.66%;
+}
+
+.banner-container .banner3 img{
+    content: url("../images/home/javachip-frappucino-funsummer-mobile.png");
+}
+
+.banner-container .banner3 .col65{
+    color :rgb(0, 0, 0);
+    text-align: center;
+}
+
+.banner-container .banner3 .col-6 .title #text{
+    font-size: 8vw;
+    text-align: center;
+    text-shadow: 5px 5px 3px black;
+}
+
+.banner-container .banner3 .col-6 #description{
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px black;
+    letter-spacing: 1px;
+}

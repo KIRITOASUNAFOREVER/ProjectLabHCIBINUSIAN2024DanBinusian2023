@@ -1,0 +1,359 @@
+/* COLORS
+coffee (d2l): #38220f #59331f #634832 #745037 #856148 #dbc1ac #ece0d1 #fffce1
+*/
+
+* {
+    font-family: Poppins;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+}
+
+/***** Master Styling *****/
+.header {
+    background-color: #634832;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header .header-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header .header-content .header-logo {
+    float: left;
+    padding: 10px 0;
+}
+
+.header .header-content .header-logo img {
+    vertical-align: middle;
+}
+
+.header .header-content .header-logo .logo-circle {
+    height: 100px;
+}
+
+.header .header-content .header-logo .logo-text {
+    height: 100px;
+}
+
+.header .header-content .navbar {
+    float: right;
+    letter-spacing: 2px;
+}
+
+.header .header-content .navbar ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header .header-content .navbar ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 100px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.header .header-content .navbar ul li a {
+    text-decoration: none;
+    color: #fffce1;
+    display: block;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.header .header-content .navbar ul li:hover {
+    background-color: #59331f;
+}
+
+.header .header-content .navbar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #745037;
+}
+
+.header .header-content .navbar ul li:hover ul {
+    display: block;
+}
+
+.header .header-content .navbar ul li ul li {
+    width: 100%;
+    padding: 0;
+}
+
+.header .header-content .navbar ul li ul li:hover {
+    background-color: #856148;
+}
+
+.header .header-content .navbar ul li:hover ul li a {
+    color: #fffce1;
+    font-size: 15px;
+}
+
+.header .header-content .navbar ul li ul li a {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.active {
+    background-color: #38220f;
+}
+
+.header .icon {
+    display: none;
+    width: 7vw;
+    height: 75px;
+    line-height: 75px;
+    text-decoration: none;
+    color: #fffce1;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.header .header-content .navbar-resp {
+    display: none;
+    width: 100%;
+}
+
+.header .header-content .navbar-resp ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header .header-content .navbar-resp ul li {
+    list-style-type: none;
+    line-height: 70px;
+    width: 150px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.header .header-content .navbar-resp ul li a {
+    text-decoration: none;
+    color: #fffce1;
+    display: block;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.header .header-content .navbar-resp ul li:hover {
+    background-color: #59331f;
+}
+
+.header .header-content .navbar-resp ul .submenu {
+    display: none;
+    background-color: #745037;
+}
+
+.header .header-content .navbar-resp ul .submenu li:hover {
+    background-color: #856148;
+}
+
+.header .header-content .navbar-resp ul .submenu li a {
+    color: #fffce1;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 620px) {
+    .clear {
+        clear: both;
+    }
+
+    .header .header-content {
+        width: 100%;
+    }
+    
+    .header .header-content .header-logo {
+        margin-left: 20px;
+        float: none;
+        display: inline;
+        margin: 0 auto;
+    }
+
+    .header .header-content .header-logo .logo-circle {
+        height: 50px;
+    }
+    
+    .header .header-content .header-logo .logo-text {
+        height: 50px;
+    }
+
+    .header .header-content .navbar {
+        display: none;
+    }
+
+    .header .icon {
+        display: inline-block;
+    }
+
+    .header .navbar-resp.responsive {
+        display: block;
+    }
+}
+
+.content-master {
+    background-image: url(https://placehold.it/400x300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    background-color: #ece0d1;
+}
+
+.footer .contact {
+    display: flex;
+}
+
+.footer .contact .contact-details, .footer .contact .contact-form {
+    flex: 50%;
+}
+
+.footer .contact .contact-details {
+    padding: 50px 50px 50px 150px;
+    color: #38220f;
+}
+
+.footer .contact .contact-details h2 {
+    font-size: 40px;
+    margin: 0;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.footer .contact .contact-details p {
+    margin: 0;
+    margin-top: 15px;
+}
+
+.footer .contact .contact-details span {
+    color: #634832;
+    font-weight: bold;
+}
+
+.footer .contact .content-details a {
+    text-decoration: none;
+}
+
+.footer .contact .contact-details i {
+    font-size: 40px;
+    color: #634832;
+    transition: 0.4s;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    margin: 10px 5px;
+}
+
+.footer .contact .contact-details i:hover {
+    font-size: 50px;
+    margin: 10px 20px;
+}
+
+.footer .contact .contact-form {
+    padding: 50px 150px 50px 50px;
+}
+
+.footer .contact .contact-form input[type=text], .footer .contact .contact-form textarea {
+    font-size: 15px;
+    padding: 10px;
+    margin: 7px auto;
+    border: 0;
+}
+
+.footer .contact .contact-form input[type=text]:focus, .footer .contact .contact-form textarea:focus {
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer .contact .contact-form input[type=text] {
+    width: 75%;
+}
+
+.footer .contact .contact-form textarea {
+    font-size: 15px;
+    padding: 10px;
+    width: 75.4%;
+    height: 200px;
+    resize: vertical;
+}
+
+.footer .contact .contact-form input[type=submit] {
+    background-color: #856148;
+    padding: 15px 70px;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ece0d1;
+    transition: 0.4s;
+}
+
+.footer .contact .contact-form input[type=submit]:hover {
+    background-color: #634832;
+}
+
+.footer .copyright {
+    background-color: #38220f;
+    margin: 0;
+    padding: 25px;
+}
+
+.footer .copyright h6 {
+    margin: 0;
+    color: #fffce1;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+    .footer .contact {
+        display: block;
+    }
+    
+    .footer .contact .contact-details, .footer .contact .contact-form {
+        width: 100%;
+    }
+
+    .footer .contact .contact-details {
+        padding: 50px 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer .contact .contact-form {
+        padding: 0 0 50px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer .contact .contact-form input[type=text] {
+        width: 95%;
+    }
+    
+    .footer .contact .contact-form textarea {
+        width: 95%;
+    }
+
+    .footer .copyright {
+        text-align: center;
+        padding: 15px;
+    }
+}
+/***** *****/
