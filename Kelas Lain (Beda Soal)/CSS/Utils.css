@@ -1,0 +1,52 @@
+.util-mb-small {
+    margin-bottom: .5rem;
+}
+
+.util-mb-1rem {
+    margin-bottom: 1rem;
+}
+
+.util-mb-2rem {
+    margin-bottom: 2rem;
+}
+
+.util.mb-3rem {
+    margin-bottom: 3rem;
+}
+
+.util-py-2rem {
+    padding: 2rem 0;
+}
+
+.util-py-3rem {
+    padding: 3rem 0;
+}
+
+.util-fullscreen-height {
+    height: 100vh;
+}
+
+.util-text-center {
+    text-align: center !important;
+}
+
+.util-text-left {
+    text-align: left !important;
+}
+
+.util-text-justify {
+    text-align: justify !important;
+}
+
+.util-text-color-blue {
+    color: #2b75b8;
+}
+
+.util-text-spacing-med {
+    letter-spacing: .2rem;
+}
+
+.util-clear-margin-padding {
+    margin: 0;
+    padding: 0;
+}

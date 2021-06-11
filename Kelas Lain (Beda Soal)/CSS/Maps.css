@@ -1,0 +1,169 @@
+@import "Font-style.css";
+
+.map-gallery {
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+.map-content {
+    flex: 1 1 22.5%;
+    position: relative;
+    margin: 0.5rem 0.5rem;
+    min-width: 15rem;
+    width: 25rem;
+    max-width: 25rem;
+    height: 15rem;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #1971CC;
+    align-self: stretch;
+    align-content: center;
+    text-align: center;
+}
+
+.map-content .map-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-content .map-images img {
+    width: 200%;
+}
+
+.map-content .map-name {
+    background-color: hsla(0, 0%, 15%, 0.6);
+    position: absolute;
+    padding: .5rem 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.map-content:hover {
+    background-color: #2b75b8;
+    transition: ease-out .1s;
+    object-fit: cover;
+}
+
+.map-content:hover .map-images {
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+}
+
+.map-content:hover .map-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.map-content,
+.map-content *,
+.map-content:hover * {
+    transition: ease-out .2s;
+}
+
+.map-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.map-detail > * {
+    padding: 0 1rem;
+}
+
+.map-detail .map-images {
+    flex: 0 3 50%;
+    width: 100%;
+    max-width: 30rem;
+    min-width: 20rem;
+    object-fit: scale-down;
+}
+
+.map-detail .map-overview {
+    flex: 2 0 40%;
+    min-width: 25rem;
+}
+
+.map-detail .map-overview div {
+    margin: 0 .5rem;
+    margin-bottom: 1rem;
+}
+
+.map-detail .map-overview .map-description {
+    text-align: justify;
+}
+
+.map-detail ul {
+    padding-left: 2rem;
+}
+
+#map-title {
+    text-transform: capitalize;
+}
+
+.map-menu {
+    margin: auto;
+    text-align: center;
+}
+
+.map-menu-button {
+    margin: auto;
+    min-width: 150px;
+    max-width: 600px;
+    text-align: center;
+    background-color: #2b75b8;
+    border-radius: .5rem;
+    padding: 1rem 4rem;
+}
+
+.map-menu-button:hover {
+    background-color: #3390F0;
+}
+
+@media only screen and (max-width: 800px) {
+    .map-gallery {
+        flex-flow: wrap;
+        flex-wrap: wrap;
+    }
+
+    .map-content {
+        min-width: 15rem;
+        width: 25rem;
+        max-width: 25rem;
+        flex: 1 1 40%;
+    }
+
+    .map-detail {
+        flex-direction: column;
+    }
+
+    .map-detail .map-images {
+        align-self: center;
+        margin: 1rem;
+        margin-top: 0;
+        max-width: max-content;
+        max-height: 20rem;
+    }
+
+    .map-detail .map-overview {
+        min-width: min-content;
+    }
+
+    .map-menu-button {
+        max-width: 400px;
+    }
+}
+
+
+@supports not (flex-wrap: wrap) {
+    .map-gallery {
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Maps.css">
+    <link rel="stylesheet" href="../CSS/Layout/Layout.css">
+    <title>Map Detail | Rainbow 7 Siege</title>
+    <link rel="icon" href="../Assets/favicon.ico">
+</head>
+
+<body onload="loadElements()" class="util-fullscreen-height">
+    <nav>
+        <div class="right-button">
+            <div class="action-button">
+                <a href="#">LOGIN</a>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="Home.html"><img src="../Assets/Images/logo.png" alt="Rainbow Seven Logo"></a>
+        </div>
+        <label class="toggle-label burger-menu" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" class="toggleMenu">
+        <ul class="navbar-item">
+            <li class="menu-item submenu">
+                <a href="#">Operators</a>
+                <div class="dropdown-list">
+                    <ul class="dropdown">
+                        <li><a href="Operator-attacker.html">Attacker</a></li>
+                        <li><a href="Operator-defender.html">Defender</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item active">
+                <a href="Maps.html">Maps</a>
+            </li>
+            <li class="menu-item">
+                <div class="quarantine">
+                    <a href="Quarantine.html">Quarantine</a>
+                    <div>
+                        <span class="badge">New</span>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-item">
+                <a href="Pre-Order.html">Pre-Order</a>
+            </li>
+            <li class="menu-item button-menu">
+                <div class="action-button burger-menu-button">
+                    <a href="#">LOGIN</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <h1 class="text-heading util-mb-1rem">Map Detail: <span id="map-title">[Siege Map]</span>
+            </h1>
+            <div class="map-detail">
+                <img class="map-images" src="../Assets/Images/Maps/null.jpg" alt="Foto Map" id="map-image">
+                <div class="map-overview">
+                    <div class="map-description">
+                        <h3>Description</h3>
+                        <p id="description">
+                            [Map description goes here]
+                        </p>
+                    </div>
+                    <div class="map-properties">
+                        <h3>Properties</h3>
+                        <ul class="map-properties">
+                            <li><strong>Location:</strong> <span id="location">[location]</span></li>
+                            <li><strong>Gameplay Mode:</strong> <span id="gamemode">[gamemode]</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="map-menu">
+                <a href="Maps.html" class="map-menu-button">Back to Map List</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <div class="footerDesc">
+                <p>Find us on:</p>
+            </div>
+            <a href="https://www.facebook.com/groups/R6SCGlobal/" target="_blank">
+                <img src="../Assets/Images/social-media/facebook logo.png" alt=""></a>
+            <a href="https://www.instagram.com/rainbow6game_us/?hl=en" target="_blank">
+                <img src="../Assets/Images/social-media/instagram logo.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../JS/MapInfoScript.js"></script>
+</body>
+
+</html>
