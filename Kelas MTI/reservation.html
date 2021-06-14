@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/reservation.css">
+    <title>Reservasi</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="toggle-button">
+            <img src="images/menu.png" alt="">
+
+            <span>Menu</span>
+        </div>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promo.html">Promo</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="reservation.html">Reservasi</a></li>
+            </ul>
+        </div>
+    </nav>  
+
+    <main>
+        <h1 class="page-title">Reservasi</h1>
+        <form onsubmit="return validate()" method="post">
+            <section class="form">
+                <div class="input-form">
+                    <div class="form-left">
+                        <label for="name" class="name">Nama</label>
+                        <br>
+                        <input type="text" class="name" id="name">
+                        <br>
+                        <p class="form-error name-error">Mohon masukkan nama anda dengan benar.</p>
+                        <br>
+                        <label for="telp" class="telp">No. Telepon</label>
+                        <br>
+                        <input type="tel" name="telp" id="telp">
+                        <br>
+                        <p class="form-error telp-error">Mohon masukkan nomor telepon anda dengan benar</p>
+                        <br>
+                        <label for="people">Jumlah Orang</label>
+                        <br>
+                        <input type="number" name="people" id="people">
+                        <br>
+                        <p class="form-error people-error">Mohon masukkan jumlah orang yang akan datang</p>
+                    </div>
+                    <div class="divisor"></div>
+                    <div class="form-right">
+                        <label for="date" class="date">Tanggal</label>
+                        <br>
+                        <input type="date" name="date" id="date" placeholder="dd-mm-yyyy">
+                        <br>
+                        <p class="form-error date-error">Mohon masukkan tanggal dengan benar, reservasi hanya bisa dilakukan satu hari setelah hari ini</p>
+                        <br>
+                        <label for="time" class="time">Waktu</label>
+                        <br>
+                        <input type="time" name="time" id="time">
+                        <br>
+                        <p class="form-error time-error">Mohon masukkan waktu dengan benar, reservasi hanya bisa dilakukan jam 9 pagi hingga jam 8 malam</p>
+                        <br>
+                        <label for="coupon" class="coupon">Kode Kupon</label>
+                        <br>
+                        <input type="text" class="coupon" id="coupon">
+                        <br>
+                        <p class="form-error coupon-error">Kupon tidak ditemukan.</p>
+                    </div>
+                </div>
+                <button type="submit" class="submit-form">Kirimkan</button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        
+        <section class="contact">
+            <h3>Temukan kami di</h3>
+
+            <div id="social-media-list">
+    
+                <div id="social-media">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <p><a href="https://www.facebook.com">ababasteak.id</a></p>
+                </div>
+    
+                <div id="social-media">
+                    <img src="images/twitter.png" alt="Twitter">
+                    <p><a href="https://www.twitter.com">ababasteak.id</a></p>
+                </div>
+    
+                <div id="social-media">
+                    <img src="images/instagram.png" alt="Instagram">
+                    <p><a href="https://www.instagram.com">ababasteak.id</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="copyright">
+            <p>Copyright ©2021 ABABA STEAK</p>
+        </section>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="JS/reservation.js"></script>
+</body>
+</html>
